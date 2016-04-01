@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formLnltAdpt" >
+    
+    <TextView android:id="@+id/txtvRestaurantName"
+        style="@style/formalText"/>
+        
+    <TextView android:id="@+id/txtvRestaurantTelephone"
+        style="@style/formalText" 
+        android:layout_gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="15sp"/>
+        
+</LinearLayout>

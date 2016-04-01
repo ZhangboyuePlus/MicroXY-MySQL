@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://xfire.codehaus.org/config/1.0">
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>NewsService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.newsService.NewsService</serviceClass>
+      <implementationClass>com.xFire.service.impl.newsService.NewsServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+    </service>
+    
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>ClassRoomService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.classRoomService.ClassRoomService</serviceClass>
+      <implementationClass>com.xFire.service.impl.classRoomService.ClassRoomServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+    </service>
+ 
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>RecuitmentService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.recuitmentService.RecuitmentService</serviceClass>
+      <implementationClass>com.xFire.service.impl.recuitmentService.RecuitmentServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>CourseTableService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.courseTableService.CourseTableService</serviceClass>
+      <implementationClass>com.xFire.service.impl.courseTableService.CourseTableServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>MealService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.mealService.MealService</serviceClass>
+      <implementationClass>com.xFire.service.impl.mealService.MealServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>LoginOrRegisterService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.loginOrRegisterService.LoginOrRegisterService</serviceClass>
+      <implementationClass>com.xFire.service.impl.loginOrRegisterService.LoginOrRegisterServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>AccountService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.accountService.AccountService</serviceClass>
+      <implementationClass>com.xFire.service.impl.accountService.AccountServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>ArticlesFoundService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.articlesFoundService.ArticlesFoundService</serviceClass>
+      <implementationClass>com.xFire.service.impl.articlesFoundService.ArticlesFoundServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+   
+   <service xmlns="http://xfire.codehaus.org/config/1.0"
+         xmlns:s="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+      <name>SecondaryMarketService</name>
+      <namespace>http://www.zby.com/</namespace>
+      <serviceClass>com.xFire.service.secondaryMarketService.SecondaryMarketService</serviceClass>
+      <implementationClass>com.xFire.service.impl.secondaryMarketService.SecondaryMarketServiceImpl</implementationClass>
+      <style>wrapped</style>
+      <use>literal</use>
+      <scope>application</scope>
+   </service>
+</beans>

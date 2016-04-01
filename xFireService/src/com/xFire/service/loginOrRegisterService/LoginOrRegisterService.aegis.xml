@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    <mapping>
+        <method name="isAccountRegistered">
+            <parameter index="0" componentType="java.lang.String" />
+            <parameter index="1" componentType="java.lang.String" />
+            <return-type componentType="java.lang.String" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="registerNewAccount">
+            <parameter index="0" componentType="java.lang.String" />
+            <parameter index="1" componentType="java.lang.String" />
+            <parameter index="2" componentType="java.lang.String"/>
+            <return-type componentType="java.lang.String" />
+        </method>
+    </mapping>
+</mappings>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/formLnltAdpt" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:id="@+id/txtvPubKindTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"/>
+	</RelativeLayout>
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <TextView android:id="@+id/txtvPubKindPublisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:textColor="#9A9A9A"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+        
+        <TextView android:id="@+id/txtvPubKindTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:textColor="#9A9A9A"
+            android:layout_marginRight="15dip"
+            android:layout_toLeftOf="@+id/txtvPubKindState"
+            android:layout_centerVertical="true"/>
+        
+        <TextView android:id="@+id/txtvPubKindState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	        android:textColor="#9A9A9A"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+</LinearLayout>

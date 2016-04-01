@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formalLnltFrgt" >
+    
+    <TextView android:text="@string/admission_year"
+        style="@style/formalText"/>
+    
+    <Spinner android:id="@+id/spnnAdmissionYear" 
+        style="@style/spnnChooseInfo"/>
+
+    <TextView android:text="@string/professional"
+        style="@style/formalText"/>
+    
+    <Spinner android:id="@+id/spnnProfessional" 
+        style="@style/spnnChooseInfo"/>
+    
+    <TextView android:text="@string/_class"
+        style="@style/formalText"/>
+    
+    <Spinner android:id="@+id/spnnClass" 
+        style="@style/spnnChooseInfo"/>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip">
+        
+        <Button android:id="@+id/bttnConfirmChooseCourseTable"
+            style="@style/formButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="35dip"
+            android:layout_alignParentBottom="true"
+            android:text="@string/confirm"/>
+        
+        <Button android:id="@+id/bttnCancelChooseCourseTable"
+            style="@style/formButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="35dip"
+            android:text="@string/cancel"/>
+    </RelativeLayout>
+</LinearLayout>

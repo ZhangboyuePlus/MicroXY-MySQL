@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/formalScrlFrgt">
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dip" >
+	        
+		    <TextView style="@style/formalText.txtvTitle22"
+		        android:layout_alignParentLeft="true"
+		        android:text="@string/i_want_publish"/>
+		    
+		</RelativeLayout> 
+        
+        <View style="@style/formalLine.h2"
+            android:layout_marginBottom="5dip"/>
+
+	    <RadioGroup android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:orientation="horizontal">
+	          
+	              <RadioButton android:id="@+id/rdbtIPickUp"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:layout_marginRight="20dip"
+	                  android:textColor="@android:color/background_dark"
+	                  android:text="@string/i_pick_up"/>
+	
+	              <RadioButton android:id="@+id/rdbtILost"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:textColor="@android:color/background_dark"
+	                  android:text="@string/i_lost"/>
+		</RadioGroup>
+            
+	    <EditText android:id="@+id/dttxTitlePulishAtcFd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/please_input_title"
+	        android:minLines="1"
+	        android:maxLines="3" 
+	        android:textSize="15sp" />
+	    
+	    <EditText android:id="@+id/dttxArticlePublishAtcFd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/please_input_article"
+	        android:minLines="5"
+	        android:maxLines="12" 
+	        android:textSize="15sp" />
+	    
+	    <EditText android:id="@+id/dttxPhoneNumberPublishAtcFd"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:hint="@string/please_input_phone_number"
+	        android:inputType="phone"
+	        android:textSize="15sp" />
+	    	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<EditText android:id="@+id/dttxLastNamePublishAtcFd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:hint="@string/your_last_name"
+		        android:textSize="15sp" />
+			
+		    <RadioGroup android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dip"
+	            android:layout_marginLeft="5dip"
+	            android:orientation="horizontal">
+                
+		        <RadioButton android:id="@+id/rdbtFemalePublishAtcFd"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:textColor="@android:color/background_dark"
+		            android:text="@string/female"/>
+		        
+		        <RadioButton android:id="@+id/rdbtMalePublishAtcFd"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:textColor="@android:color/background_dark"
+		            android:text="@string/male"/>
+		        
+		    </RadioGroup>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="25dip">
+	
+	        <Button android:id="@+id/bttnConfirmPublishAtcFd"
+				style="@style/formButton"
+	            android:text="@string/confirm"
+	            android:layout_centerInParent="true" />
+	        
+	    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+    <com.UI.micxiyou.news.NewsIndicator
+        android:id="@+id/news_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"> 											   <!-- 没有这个weight属性 不会显示下面的Fragment -->
+        
+	    <fragment 
+	        android:id="@+id/fragment_school_news"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        class="com.UI.micxiyou.news.SchoolNewsFragment"
+	        />
+	    
+	    <fragment
+	        android:id="@+id/fragment_school_announcement"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        class="com.UI.micxiyou.news.SchoolAnnouncementFragment"
+	        />
+	    
+	    <fragment
+	        android:id="@+id/fragment_school_info"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        class="com.UI.micxiyou.news.SchoolInfoFragment"
+	        />
+	</FrameLayout>
+</LinearLayout>

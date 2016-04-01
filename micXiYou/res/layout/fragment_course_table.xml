@@ -1,0 +1,68 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formalTbltFrgt" 
+    android:background="@drawable/background_course_table" >
+    
+   	<TableRow
+   	    android:layout_weight="1">
+		<TextView android:text="@string/xinqi"
+			style="@style/txtvXinqi" />
+        <TextView android:id="@+id/txtvCosTabMonday"
+            android:text="@string/Modday"
+		    style="@style/txtvXinqi"/>
+        <TextView android:id="@+id/txtvCosTabTuesday"
+            android:text="@string/Tuesday"
+		    style="@style/txtvXinqi"/>
+        <TextView android:id="@+id/txtvCosTabWednesday"
+            android:text="@string/Wednesday"
+		    style="@style/txtvXinqi"/>
+        <TextView android:id="@+id/txtvCosTabThursday"
+            android:text="@string/Thursday"
+		    style="@style/txtvXinqi"/>
+        <TextView android:id="@+id/txtvCosTabFriday"
+            android:text="@string/Friday"
+		    style="@style/txtvXinqi"/>
+	</TableRow>
+        
+   	<View style="@style/formalLine.h2" />
+   	   	
+	<TableRow android:layout_weight="4">
+        <TextView android:text="@string/OneToTwoclasses"
+            style="@style/txtvClassOfWhen"/>
+            
+        <TextView android:id="@+id/txtv1_2Class" 
+            style="@style/txtvClass"/>
+	</TableRow>
+
+	<View style="@style/formalLine.h2" />
+	
+    <TableRow android:layout_weight="4"  >
+            <TextView android:text="@string/ThreeToFourclasses"
+                style="@style/txtvClassOfWhen"/>
+            
+            <TextView android:id="@+id/txtv3_4Class" 
+            	style="@style/txtvClass"/>
+    </TableRow>
+        
+  	<View style="@style/formalLine.h2" />
+    
+    <TableRow android:layout_weight="4" >
+            <TextView android:text="@string/FiveToSixclasses"
+                style="@style/txtvClassOfWhen"/>
+
+            <TextView
+                android:id="@+id/txtv5_6Class"
+                style="@style/txtvClass"/>
+    </TableRow>
+    
+    <View style="@style/formalLine.h2" />
+    
+	<TableRow android:layout_weight="4">
+            <TextView android:text="@string/SevenToEightclasses"
+                style="@style/txtvClassOfWhen"/>
+
+            <TextView
+                android:id="@+id/txtv7_8Class"
+                style="@style/txtvClass"/>
+
+    </TableRow>
+</TableLayout>

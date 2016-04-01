@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    
+    <mapping>
+        <method name="getRecuitmentTitle">
+            <parameter index="0" componentType="java.lang.Integer" />
+			<parameter index="1" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.recuitment.RecuitmentBean" />
+        </method>
+    </mapping>
+
+    <mapping>
+        <method name="getRecuitmentContentByPosition">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <return-type componentType="java.lang.String" />
+        </method>
+    </mapping>
+</mappings>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	style="@style/formalLnltFrgt"
+	android:padding="0dip" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/txtvMyPublishInArticleFound"
+            style="@style/formalText.txtvTitle22"
+            android:layout_alignParentLeft="true"
+            android:text="@string/my_publish" />
+
+        <TextView
+            android:id="@+id/txtvIWantPublishInArticleFound"
+            style="@style/formalText.txtvTitle22" 
+            android:layout_alignParentRight="true"
+            android:text="@string/i_want_publish" />
+    </RelativeLayout>
+
+    <View style="@style/formalLine.h2"/>
+        
+    <ListView 
+        android:id="@+id/lstvArticleFound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+</LinearLayout>

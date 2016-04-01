@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="mainTitle" parent="android:Theme">
+        <item name="android:windowTitleSize">35dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/customMainTitleBackground</item>
+	</style>
+
+    <style name="customMainTitleBackground">
+        <item name="android:background">#654321</item>
+    </style>
+
+    <style name="formalLnltFrgt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E9E9E9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">3dip</item>
+        <item name="android:paddingRight">3dip</item>
+    </style>
+
+    <style name="formalRltvFrgt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E9E9E9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+    
+    <style name="formalTbltFrgt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E9E9E9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+    
+    <style name="formalScrlFrgt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E9E9E9</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+    
+    <style name="formButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingRight">20dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+    </style>
+    
+    <style name="formLnltAdpt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="formRltvAdpt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+    <style name="formalLine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">2dip</item>
+        <item name="android:background">@android:color/background_dark</item>
+    </style>
+    
+    <style name="formalLine.h2">
+        <item name="android:layout_height">2dip</item>
+    </style>
+
+    <style name="formalLine.h1">
+        <item name="android:layout_height">1dip</item>
+    </style>
+    
+    
+    <style name="formalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="formalText.txtvTitle22">
+        <item name="android:textSize">22sp</item>
+        <item name="android:padding">2dip</item>
+    </style>
+    
+    <style name="spnnChooseInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15dip</item>
+    </style>
+    
+    <style name="txtvXinqi">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="txtvClassOfWhen">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        
+    </style>
+    
+    <style name="txtvClass">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:layout_column">1</item>
+        <item name="android:layout_span">5</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="dptrLstvStudyRoom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

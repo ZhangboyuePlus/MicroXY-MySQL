@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+
+    <mapping>
+        <method name="getNewClassRoomVersion">
+            <return-type componentType="java.lang.String" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="getClassRoom">
+            <return-type componentType="com.xFire.bean.classRoom.ClassRoomBean" />
+        </method>
+    </mapping>
+</mappings>

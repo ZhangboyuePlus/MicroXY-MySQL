@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formalScrlFrgt" >
+       
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dip"
+            android:textSize="25sp"
+            android:textColor="@android:color/background_dark"
+            android:text="@string/personal_profile"/>
+        
+		<View
+        	android:layout_width="match_parent"
+	        android:layout_height="5dip"
+	        android:layout_marginBottom="10dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout
+		    android:id="@+id/lnltUserNameInMyInfo"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+		    
+			<TextView android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:textSize="18sp"
+			    android:text="@string/user_name_" />
+			
+			<TextView android:id="@+id/txtvUserName_MyInfo" 
+			    android:layout_width="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:layout_height="wrap_content"
+			    android:paddingLeft="15dip"
+			    android:textSize="18sp"/>
+		</LinearLayout>
+	
+		<View
+        	android:layout_width="match_parent"
+	        android:layout_height="1dip"
+        	android:layout_marginRight="20dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+		    
+		    <TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+		        android:text="@string/registered_Email_"
+		        android:textSize="18sp"/>
+		    
+		    <TextView android:id="@+id/txtvRegisteredEmial_MyInfo" 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+		        android:paddingLeft="15dip"
+		        android:textSize="18sp" />
+		</LinearLayout>
+		
+		<View
+        	android:layout_width="match_parent"
+	        android:layout_height="1dip"
+        	android:layout_marginRight="20dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout
+		    android:id="@+id/lnltModifyPassWordInMyInfo"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+
+			<TextView android:id="@+id/txtvModifyPassWord_MyInfo" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:text="@string/modify_passWord"
+			    android:textSize="18sp" />
+		</LinearLayout>
+
+		<View
+        	android:layout_width="match_parent"
+	        android:layout_height="1dip"
+        	android:layout_marginRight="20dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout
+		    android:id="@+id/lnltLogOffInMyInfo"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+
+			<TextView android:id="@+id/txtvLogOffMyInfo"
+			    android:layout_width="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:layout_height="wrap_content"
+			    android:text="@string/log_off"
+			    android:textSize="18sp" />
+		</LinearLayout>
+
+		<TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:paddingTop="15dip"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            android:text="@string/more_"/>
+        
+		<View
+        	android:layout_width="match_parent"
+	        android:layout_height="5dip"
+	        android:layout_marginBottom="10dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout
+		    android:id="@+id/lnltContactUs"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+		    
+			<TextView  
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:textSize="18sp"
+			    android:text="@string/ContactUs" />
+			
+		</LinearLayout>
+		
+		<View
+        	android:layout_width="match_parent"
+        	android:layout_marginRight="20dip"
+	        android:layout_height="1dip"
+    	    android:background="#696969" />
+		
+		<LinearLayout
+		    android:id="@+id/lnltDeveloMember"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="8dip"
+		    android:paddingBottom="8dip">
+		    
+			<TextView  
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+	            android:textColor="@android:color/background_dark"
+			    android:textSize="18sp"
+			    android:text="@string/develop_member" />
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+</ScrollView>	

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    style="@style/formalLnltFrgt">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        android:paddingTop="15dip"
+        android:textSize="25sp"
+        android:text="@string/ContactUs" />
+    
+	<View
+       	android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_marginBottom="10dip"
+   	    android:background="#696969" />
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="8dip"
+	    android:paddingBottom="8dip">
+		    
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+		    android:textSize="18sp"
+		    android:text="@string/e_mail" />
+		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+		    android:paddingLeft="15dip"
+		    android:text="@string/zby_qq_Email"
+		    android:textSize="18sp"/>
+	</LinearLayout>
+
+	<View
+       	android:layout_width="match_parent"
+        android:layout_height="1dip"
+       	android:layout_marginRight="20dip"
+   	    android:background="#696969" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="8dip"
+	    android:paddingBottom="8dip">
+		    
+		<TextView android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+		    android:textSize="18sp"
+		    android:text="@string/QQ_number" />
+		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="15dip"
+            android:textColor="@android:color/background_dark"
+		    android:text="@string/zby_qq_number"
+		    android:textSize="18sp"/>
+	</LinearLayout>
+	
+
+</LinearLayout>

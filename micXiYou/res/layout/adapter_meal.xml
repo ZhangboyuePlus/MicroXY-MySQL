@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formRltvAdpt"
+    android:orientation="horizontal">
+    
+    <TextView android:id="@+id/txtvMealName"
+        style="@style/formalText"/>
+    
+    <TextView android:id="@+id/txtvMealPrice"
+		style="@style/formalText"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="5dip"/>
+    
+</RelativeLayout>

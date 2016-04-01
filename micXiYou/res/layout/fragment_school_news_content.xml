@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/formalScrlFrgt" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<TextView 
+			    android:id="@+id/txtvNewsArticleTitle"
+				style="@style/formalText"
+		        android:textSize="20sp"
+		        android:layout_centerInParent="true"/>
+		</RelativeLayout>
+	    
+	    <View style="@style/formalLine.h2"
+	        android:layout_marginTop="3dip"/>
+
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dip"
+	        android:layout_marginBottom="2dip">
+	        
+			<TextView 
+			    android:id="@+id/txtvNewsArticleReadCount"
+	            style="@style/formalText"
+	            android:textSize="15sp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"/>
+	        
+			<TextView 
+			    android:id="@+id/txtvNewsArticleTime"
+	            style="@style/formalText"
+	            android:textSize="15sp"
+	            android:layout_alignParentRight="true"
+			    android:layout_marginRight="5dp"
+	            android:layout_centerVertical="true"/>
+	    </RelativeLayout>
+
+	    <View style="@style/formalLine.h1"
+	        android:layout_marginBottom="5dip" />
+
+		<TextView 
+	    android:id="@+id/txtvNewsArticle"
+		    android:layout_margin="5dp"
+	        style="@style/formalText"
+	        android:textSize="18sp" />
+	</LinearLayout>
+</ScrollView>

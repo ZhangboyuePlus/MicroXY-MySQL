@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/formalLnltFrgt"
+    android:padding="0dip" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/txtvCanteen" 
+            style="@style/formalText"
+        	android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+    <View style="@style/formalLine.h2"
+        android:paddingTop="2dip"/>
+    
+    <ListView android:id="@+id/lstvRestaurants"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+</LinearLayout>

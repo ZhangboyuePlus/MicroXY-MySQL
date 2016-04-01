@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/formalScrlFrgt"
+    android:id="@+id/tbltHomeContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="0, 1" >
+
+    <TableRow 
+        android:paddingTop="30dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtvCourseTable"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/course_table"
+            android:gravity="center_horizontal"
+            android:text="@string/timetable" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvStudyRoom"
+            android:layout_weight="1" 
+            android:drawableTop="@drawable/study_room"
+            android:gravity="center_horizontal"
+            android:text="@string/study_room" >
+        </TextView>
+    </TableRow>
+
+    <TableRow android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txtvArticlesFound"
+            android:layout_weight="1" 
+            android:drawableTop="@drawable/article_found"
+            android:gravity="center_horizontal"
+            android:text="@string/articles_found" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvSecondaryMarket"
+            android:layout_weight="1" 
+            android:drawableTop="@drawable/second_market"
+            android:gravity="center_horizontal"
+            android:text="@string/secondary_market" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="1"  >
+
+        <TextView
+            android:id="@+id/txtvXYMap"
+            android:layout_weight="1" 
+            android:drawableTop="@drawable/xy_map"
+            android:gravity="center_horizontal"
+            android:text="@string/XYMap" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtvRecuitment"
+            android:layout_weight="1" 
+            android:drawableTop="@drawable/recuitment"
+            android:gravity="center_horizontal"
+            android:text="@string/recruitment" >
+        </TextView>
+    </TableRow>
+</TableLayout>

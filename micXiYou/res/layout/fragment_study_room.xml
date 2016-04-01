@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/formalLnltFrgt"
+    android:background="@drawable/background_studyroom">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton 
+            android:id="@+id/tgbtIsDoubleWeek" 
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/double_week"
+            android:textOff="@string/single_week"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+            />
+
+        <Spinner 
+            android:id="@+id/spnnDayOfWeek"
+            android:layout_width="1dip" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/dayOfWeek"
+            android:prompt="@string/choose_day_of_week" />
+        
+        <Spinner 
+            android:id="@+id/spnnClassOfDay"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:entries="@array/classOfDay" 
+            android:prompt="@string/choose_class_of_day"/>
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#404040"
+        android:layout_marginBottom="8dip"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+        
+        <LinearLayout 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:orientation="vertical">
+
+            <TextView style="@style/formalText" 
+        	    android:text="@string/A_Building"/>
+        	
+        	<ListView 
+        	    android:id="@+id/lstvABuilding"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:orientation="vertical">
+
+            <TextView style="@style/formalText" 
+        	    android:text="@string/B_Building"/>
+        	
+        	<ListView 
+        	    android:id="@+id/lstvBBuilding"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout 
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:orientation="vertical">
+
+            <TextView style="@style/formalText" 
+        	    android:text="@string/C_Building"/>
+        	
+        	<ListView 
+        	    android:id="@+id/lstvCBuilding"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

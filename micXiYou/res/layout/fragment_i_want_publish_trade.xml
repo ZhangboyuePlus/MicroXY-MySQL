@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/formalLnltFrgt">
+        
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dip" >
+	        
+		    <TextView style="@style/formalText.txtvTitle22"
+		        android:layout_alignParentLeft="true"
+	            android:text="@string/i_want_trade"/>
+		</RelativeLayout> 
+
+        <View style="@style/formalLine.h2"
+            android:layout_marginBottom="5dip"/>
+
+	    <RadioGroup android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="center"
+	           android:orientation="horizontal">
+	          
+	              <RadioButton android:id="@+id/rdbtISale"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:textColor="@android:color/background_dark"
+	                  android:layout_marginRight="20dip" 
+	                  android:text="@string/i_want_sale"/>
+	
+	              <RadioButton android:id="@+id/rdbtIBuy"
+	                  android:layout_width="wrap_content"
+	                  android:layout_height="wrap_content"
+	                  android:textColor="@android:color/background_dark"
+	                  android:text="@string/i_want_buy"/>
+		</RadioGroup>
+            
+	    <EditText android:id="@+id/dttxTitleTradeScdMkt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/please_input_title"
+	        android:minLines="1"
+	        android:maxLines="3" 
+	        android:textSize="15sp" />
+	    
+	    <EditText android:id="@+id/dttxArticleTradeScdMkt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/please_input_article"
+	        android:minLines="5"
+	        android:maxLines="12" 
+	        android:textSize="15sp" />
+	    
+	    <EditText android:id="@+id/dttxPhoneNumberTradeScdMkt"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:hint="@string/please_input_phone_number"
+	        android:inputType="phone"
+	        android:textSize="15sp" />
+	    	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+			<EditText android:id="@+id/dttxLastNameTradeScdMkt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:hint="@string/your_last_name"
+		        android:textSize="15sp" />
+			
+		    <RadioGroup android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dip"
+	            android:layout_marginLeft="5dip"
+	            android:orientation="horizontal">
+                
+		        <RadioButton android:id="@+id/rdbtFemaleTradeScdMkt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:textColor="@android:color/background_dark"
+		            android:text="@string/female"/>
+		        
+		        <RadioButton android:id="@+id/rdbtMaleTradeScdMkt"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:textColor="@android:color/background_dark"
+		            android:text="@string/male"/>
+		        
+		    </RadioGroup>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="25dip">
+	
+	        <Button android:id="@+id/bttnConfirmTradeScdMkt"
+				style="@style/formButton"
+	            android:text="@string/confirm"
+	            android:layout_centerInParent="true" />
+	        
+	    </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/formRltvAdpt" >    
+	<TextView 
+	    android:id="@+id/txtvNewsKindAdapterTitle"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+		android:singleLine="true"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"/>
+
+	<TextView 
+	    android:id="@+id/txtvNewsKindAdapterReadCount"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/txtvNewsKindAdapterTitle"
+	    android:layout_below="@id/txtvNewsKindAdapterTitle"
+	    android:layout_marginLeft="0dp"
+	    android:layout_marginRight="0dp"
+        android:textColor="#9A9A9A"/>
+	
+	<TextView 
+	    android:id="@+id/txtvNewsKindAdapterTime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/txtvNewsKindAdapterTitle"
+	    android:layout_below="@id/txtvNewsKindAdapterTitle"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp" 
+        android:textColor="#9A9A9A"/>
+</RelativeLayout>

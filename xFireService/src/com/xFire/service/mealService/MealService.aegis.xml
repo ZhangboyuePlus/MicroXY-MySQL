@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    
+    <mapping>
+        <method name="getRestaurantByLocation">
+            <parameter index="0" componentType="java.lang.String"></parameter>
+            <return-type componentType="com.xFire.bean.meal.RestaurantBean" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="getMealByRestaurantId">
+            <parameter index="0" componentType="java.lang.String" />
+            <return-type componentType="com.xFire.bean.meal.MealBean" />
+        </method>
+    </mapping>
+    
+ </mappings>

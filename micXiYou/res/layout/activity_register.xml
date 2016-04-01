@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+	        android:layout_width="1dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:text="@string/user_name"
+	        android:paddingRight="0dip"
+	        android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/dtxtRegisterUserName"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="10"
+            android:inputType="textEmailAddress" />
+        
+        <TextView android:id="@+id/txtvUserNameIsNotValid"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:text="@string/exclamation"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"/>
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+	        android:layout_width="1dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:text="@string/e_mail"
+	        android:paddingRight="0dip"
+	        android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/dtxtRegisterEmail"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="10"
+            android:inputType="textEmailAddress" />
+        
+        <TextView android:id="@+id/txtvRegisterEmailIsNotValid"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:text="@string/exclamation"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"/>
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+	        android:layout_width="1dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:text="@string/passWord"
+	        android:paddingRight="0dip"
+	        android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/dtxtRegisterPassWord"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="10"
+            android:inputType="textPassword" />
+        
+        <TextView android:id="@+id/txtvRegisterPassWordIsNotValid"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:text="@string/exclamation"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"/>
+        
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/passWordIsMadeByCharacterOrNumber"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+	        android:layout_width="1dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:text="@string/confirm_password"
+	        android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/dtxtRegisterConfirmPassWord"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="10"
+            android:inputType="textPassword" />
+        
+        <TextView android:id="@+id/txtvConfirmPassWordIsNotValid"
+	        android:layout_width="1dip"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:text="@string/exclamation"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dip">
+
+        <Button android:id="@+id/bttnLoginInRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingTop="5dip"
+            android:paddingRight="20dip"
+            android:paddingBottom="5dip"
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:text="@string/login"
+            android:textSize="20sp"/>
+        
+        <Button android:id="@+id/bttnRegisterInRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dip"
+            android:paddingTop="5dip"
+            android:paddingRight="20dip"
+            android:paddingBottom="5dip"
+            android:background="@android:color/holo_red_light"
+            android:text="@string/register"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</LinearLayout>

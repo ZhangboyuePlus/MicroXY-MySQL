@@ -1,0 +1,47 @@
+1、数据库中的新闻在正序情况下应该是：旧的新闻在前面，新的新闻在后面；
+数据库的记录是从1开始的
+
+2、服务器的数据库中的所有记录的 id 一律从1开始；
+
+
+////////////////////////////////////////////////
+问：fragment onhideChange == true 后，即fragment可以与用户交互后系统调用什方法？ 
+答：目前没有方法，onResume（）方法是在activity或者fragment进入active状态前调用的方法；
+
+总体上采取动态增加fragment的方法， 每增加一个MainFragment 就让MainFragmentCount ++； 并在onIndicatorClick 的时候判断count的大小，并 exchangeCountFragment。当某一个MainFragment 初始化时，让该类记住自己的下标，或者在MainActivity中记录；然后根据count数目，隐藏count个fragment，然后显示自己，并让count ++； 当要转换MainFragment时，隐藏所有MainFragment，根据点击的which 判断 显示点击的那个fragment。
+在每个fragment hideChange 和 init的时候让CurrentMainFragment 或 子CurrentFragment等于此fragment。
+///////////////////////////////////////////////
+
+
+
+第一层页面:四个主页面
+第二层页面：每个主页面下的分支页面
+/*************************************************/
+页面管理办法：
+第一层CurrentMainActivity为四个主页面的标号，第二层为每个主页面下的小页面标号  
+
+/**************************************/
+判断返回按键是否存在的办法：首先在每个第二层页面init 和 destroy 的时候做标记flag，看当下主页面是否需要显示或影藏返回按钮，并显示或隐藏返回按钮；在每个可以在主页面show的时候， 根据页面管理的办法，判断出show的主页面为哪个， 然后再根据该主页面的flag显示或隐藏返回按钮。
+
+/****************************************************************/
+分批处理Fragment的办法:
+初始化四个List<Fragment>,代表每个主页面下的fragment的返回栈，new 四个fragment代表当下的显示的fragment，在每次二层页面init的时候，fragment[i] = this。每次将fragment加入“返回栈”后，记录栈顶fragment的下标，每次按返回的时候，将栈顶fragment show出来，并将当前的fragment（也就是fragment[i]） finish，且栈顶fragment的下标减一。并标记该主页面下currentFragment为刚刚show的fragment。
+
+/*******************************************************************/
+处理“当有fragment添加到FrameLayout后， 需要显示的页面会在添加的页面下显示”的办法：
+标记每个主页面下的currentFragment，并在主页面转换时，先隐藏所有主页面和每个主页面下的currentFragment，然后show出要显示的主页面和主页面的currentFragment。
+
+/*******************************************************************/
+解决“当第一次进入某页面才初始化本页面，而不是一次性全部初始化” 的方法：
+先初始化所有的fragment，并显示第一个，判断在这个过程中会不会调用fragment中的onhidechange方法， 而在 2， 3， 4 fragment里面的onhidechange（）方法里面判断是第几次出现，进而联网显示信息。。。
+
+/********************************************************************/
+ArticleFound在调用Content的页面时，将所点击的Item的Index传到ContentActivity中，假如 ContentActivity 对 ThisPublished状态
+做过修改，则修改成功后将ArticleFound类中的静态值：isNeedModify和indexNeedModify修改为需要，ContentActivity结束后，会将ArticleFound显示，则在ArticleFound显示时， 根据那两个静态值做list的修改，并刷新ListView, 最后一定要将那两个静态值修改回原来的初始值。
+
+/********************************************************************/
+需要刷新ListView，当newsActivity显示show之后，它的子Fragment没有调用onhiddenchange（），也不能调用
+
+/********************************************************************/
+失物招领/我的发布、二手交易/我要交易 的adapter公用
+新闻页面的三个新闻栏 和 招聘的 adapter公用

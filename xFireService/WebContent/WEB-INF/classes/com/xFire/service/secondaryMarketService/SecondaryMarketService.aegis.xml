@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    <mapping>
+        <method name="getSecondaryMarketTitle">
+            <parameter index="0" componentType="java.lang.Integer" />
+			<parameter index="1" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.secondaryMarket.SecondaryMarketBean" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="getScdMktContentAndTeleNumberByid">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.secondaryMarket.SecondaryMarketBean" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="dealThisTradeById">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <parameter index="1" componentType="java.lang.String" />
+            <return-type componentType="java.lang.Boolean" />
+        </method>
+    </mapping>
+
+    <mapping>
+        <method name="getMySecondaryMarketPublishedTitle">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <parameter index="1" componentType="java.lang.Integer" />
+            <parameter index="2" componentType="java.lang.String" />
+            <return-type componentType="com.xFire.bean.secondaryMarket.SecondaryMarketBean" />
+        </method>
+    </mapping>
+
+    <mapping>
+        <method name="publishSecondaryMarket">
+            <parameter index="0" componentType="java.lang.String" />
+            <parameter index="1" componentType="java.lang.String" />
+            <parameter index="2" componentType="java.lang.String" />
+            <parameter index="3" componentType="java.lang.String" />
+            <parameter index="4" componentType="java.lang.String" />
+            <parameter index="5" componentType="java.lang.String" />
+            <parameter index="6" componentType="java.lang.String" />
+            <parameter index="7" componentType="java.lang.String" />
+            <return-type componentType="java.lang.Integer" />
+        </method>
+    </mapping>
+    
+<!--     <mapping>
+        <method name="publishArticleFound">
+            <parameter index="0" componentType="com.xFire.bean.articleFound.ArticleFoundBean" />
+            <return-type componentType="java.lang.Boolean" />
+        </method>
+    </mapping>
+ -->
+ </mappings>

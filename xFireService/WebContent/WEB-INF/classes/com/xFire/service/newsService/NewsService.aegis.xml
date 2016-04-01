@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings>
+    <mapping>
+        <method name="getSchoolNews">
+            <parameter index="0" componentType="java.lang.Integer" />
+			<parameter index="1" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.news.SchoolNewsBean" />
+        </method>
+    </mapping>
+    
+    <mapping>
+        <method name="getSchoolAnnouncement">
+            <parameter index="0" componentType="java.lang.Integer" />
+			<parameter index="1" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.news.SchoolAnnouncementBean" />
+        </method>
+    </mapping>
+
+    <mapping>
+        <method name="getSchoolInfo">
+            <parameter index="0" componentType="java.lang.Integer" />
+			<parameter index="1" componentType="java.lang.Integer" />
+            <return-type componentType="com.xFire.bean.news.SchoolInfoBean" />
+        </method>
+    </mapping>
+
+	<mapping>
+    	<method name="getSchoolNewsContentByPosition">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <return-type componentType="java.lang.String"></return-type>
+        </method>
+    </mapping>
+    
+	<mapping>
+    	<method name="getSchoolAnnouncementContentByPosition">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <return-type componentType="java.lang.String"></return-type>
+        </method>
+    </mapping>
+	
+	<mapping>
+    	<method name="getSchoolInfoContentByPosition">
+            <parameter index="0" componentType="java.lang.Integer" />
+            <return-type componentType="java.lang.String"></return-type>
+        </method>
+    </mapping>
+	
+</mappings>

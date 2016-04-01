@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    style="@style/formalLnltFrgt"
+    android:background="@drawable/background_xyfood">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_weight="1">
+
+	    <ImageButton android:id="@+id/mgbtXRY" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/xuriyuan"
+	        android:contentDescription="@string/xuRiYuan" 
+	        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_weight="1">
+
+	    <ImageButton android:id="@+id/mgbtMG"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/meishiguangchang"
+	        android:contentDescription="@string/mealMarket"
+	        android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+</LinearLayout>
